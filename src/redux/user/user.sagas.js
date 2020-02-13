@@ -75,7 +75,7 @@ export function* onGoogleSignInStart() {
 }
 
 export function* onEmailSignInStart() {
-  yield takeLatest(UserActionTypes.EMAIL_SIGN_IN_START, emailSignInStart)
+  yield takeLatest(UserActionTypes.EMAIL_SIGN_IN_START, signInWithEmail)
 }
 
 export function* onCheckUserSession() {
